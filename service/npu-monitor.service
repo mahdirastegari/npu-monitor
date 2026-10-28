@@ -1,0 +1,21 @@
+[Unit]
+Description=npu-monitord — Ascend NPU telemetry daemon
+Documentation=file:/usr/local/share/doc/npu-monitor/README.md
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=@CMAKE_INSTALL_FULL_BINDIR@/npu-monitord @CMAKE_INSTALL_FULL_SYSCONFDIR@/npu_monitor/npu-monitor.conf
+Restart=on-failure
+RestartSec=5
+# The daemon needs read access to /dev/davinci* devices.
+# Run as root for full process attribution; a dedicated group
+# with device read permissions also works for device totals only.
+User=root
+# Hardening
+ProtectSystem=strict
+ReadWritePaths=/var/run
+NoNewPrivileges=true
+
+[Install]
+WantedBy=multi-user.target

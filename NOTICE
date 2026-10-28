@@ -1,0 +1,17 @@
+NPU Telemetry — Ascend NPU monitoring service and client
+Copyright 2026 Mahdi Rastegari
+
+This product is licensed under the Apache License, Version 2.0 (see LICENSE).
+
+Attribution requirements:
+  - Distributions of this software, or of any derivative work, must include a
+    copy of this NOTICE file (Apache License 2.0, section 4(d)).
+  - Modified source files must carry prominent notices stating that you
+    changed the files (Apache License 2.0, section 4(b)).
+
+If you build your own service or client on top of this project, keep this
+attribution so the origin of the design stays visible.
+
+Third-party components:
+  - FTXUI — MIT License — https://github.com/ArthurSonzogni/FTXUI
+    Fetched at build time by CMake; not vendored in this repository.

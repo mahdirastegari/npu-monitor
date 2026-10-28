@@ -1,0 +1,22 @@
+# Build artifacts
+build/
+build-*/
+_deps/
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs and local artifacts
+*.log
+*.bundle
+
+# Local reports and development-only material belong outside the public tree.
+/reports/
+/private/
